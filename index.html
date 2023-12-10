@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     
@@ -31,6 +34,7 @@
         <div class="icons">
             <div id="login-btn" class="fas fa-user"></div>
             <div id="menu-btn" class="fas fa-bars"></div>
+            <button onclick="myFunction()" class="btn-btn btn primary">Mode</button>
         </div>
 
         <!-- login form -->
@@ -112,72 +116,71 @@
 
     <!-- gallery -->
 
-    <section class="gallery" id="gallery">
+    <h2 class="heading">Why It Matters</h2>
+    <section class="box-container" id="gallery">
 
-        <h2 class="heading">Why It Matters</h2>
-
-        <div class="swiper gallery-slider">
-
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide slide">
-                    <div class="image">
-                        <img src="images/gallery-1.jpg" alt="">
-                       
-                    </div>
-                    <div class="text-overlay">
-                        <h3>IMPROVING HUMAN LIVES</h3>
-                        <p>By protecting species, we also protect the essential goods and services that make our lives possible and contribute enormously to human health and well-being — breathable air, clean water, food, fibers, building materials, medicines, energy, fertile soils, climate regulation, transport, and recreational and spiritual values.</p>
-                    </div>
-                </div>
-              
-                
-
-                <div class="swiper-slide slide">
-                    <div class="image">
-                        <img src="images/gallery-2.jpg" alt="">
-                    </div>
-                    <div class="text-overlay">
-                        <h3>SPECIES RECOVERY</h3>
-                        <p>The cuddly black-and-white giant panda is a conservation icon and not only because it is WWF’s widely recognized logo. They are reigning celebrities in the handful of zoos around the world where people flock to see them. Numbering around 1,600 in the wild, China is the only country where giant pandas are found. WWF has played an important role in their recovery for over 30 years, ever since we became the first private conservation group to receive an official invitation from the Chinese government in 1978.</p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <div class="image">
-                        <img src="images/gallery-3.jpg" alt="">
-                    </div>
-                    <div class="text-overlay">
-                        <h3>INSPIRATION</h3>
-                        <p>A critically endangered population of the Mekong River’s Irrawaddy dolphins became the face of a global campaign to stop a major dam that would also impact local communities and livelihoods. The connection to the “smiling face of the Mekong” influenced more than a quarter of a million people around the world to join WWF in saying no to the Don Sahong dam. This species continues to inspire people to reduce pollution of freshwater sources, improve fishing practices and encourage only sustainable hydropower development.</p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <div class="image">
-                        <img src="images/gallery-4.jpg" alt="">
-                    </div>
-                    <div class="text-overlay">
-                        <h3>Saving Planet Of Life</h3>
-                        <p>We protect wildlife for many reasons. It is a source of inspiration. It nurtures a sense of wonder. It is integral to the balance of nature. In our work, WWF focuses on saving populations of the most ecologically, economically and culturally important species in the wild. Ultimately, by protecting species, we save this beautiful, vulnerable and utterly irreplaceable planet we call home.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide slide">
-                    <div class="image">
-                        <img src="images/gallery-5.jpg" alt="">
-                    </div>
-                    <div class="text-overlay">
-                        <h3>HELPING POPULATIONS THRIVE</h3>
-                        <p>It speaks to the power of the mighty predator that the first-ever global summit on a single species brought together world leaders to commit to a single purpose—doubling the number of wild tigers by 2022. WWF is playing a pivotal role in realizing this ambitious goal, which will ensure the king of the jungle will once again thrive across its range in 13 countries to benefit other wildlife and wild spaces, secure freshwater sources and a future for people too.</p>
-                    </div>
-                </div>
-
+        
+        <div class="card">
+            <!-- Image -->
+            <img src="images/gallery-1.jpg" alt="Card Image">
+    
+            <!-- Text Content -->
+            <div class="card-content">
+                <h3>IMPROVING HUMAN LIVES</h3>
+                <p>By protecting species, we also protect the essential goods and services that make our lives possible and contribute enormously to human health and well-being — breathable air, clean water, food, fibers, building materials, medicines, energy, fertile soils, climate regulation, transport, and recreational and spiritual values.</p>
             </div>
-
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-
         </div>
+        <div class="card">
+            <!-- Image -->
+            <img src="images/gallery-2.jpg" alt="Card Image">
+    
+            <!-- Text Content -->
+            <div class="card-content">
+                <h3>SPECIES RECOVERY</h3>
+                <p>The cuddly black-and-white giant panda is a conservation icon and not only because it is WWF’s widely recognized logo. They are reigning celebrities in the handful of zoos around the world where people flock to see them. Numbering around 1,600 in the wild, China is the only country where giant pandas are found. WWF has played an important role in their recovery for over 30 years, ever since we became the first private conservation group to receive an official invitation from the Chinese government in 1978.</p>
+            </div>
+        </div>
+        <div class="card">
+            <!-- Image -->
+            <img src="images/gallery-3.jpg" alt="Card Image">
+    
+            <!-- Text Content -->
+            <div class="card-content">
+                <h3>INSPIRATION</h3>
+                <p>A critically endangered population of the Mekong River’s Irrawaddy dolphins became the face of a global campaign to stop a major dam that would also impact local communities and livelihoods. The connection to the “smiling face of the Mekong” influenced more than a quarter of a million people around the world to join WWF in saying no to the Don Sahong dam. This species continues to inspire people to reduce pollution of freshwater sources, improve fishing practices and encourage only sustainable hydropower development.</p>
+            </div>
+        </div>
+        <div class="card">
+            <!-- Image -->
+            <img src="images/gallery-4.jpg" alt="Card Image">
+    
+            <!-- Text Content -->
+            <div class="card-content">
+                <h3>HELPING POPULATIONS THRIVE</h3>
+                <p>It speaks to the power of the mighty predator that the first-ever global summit on a single species brought together world leaders to commit to a single purpose—doubling the number of wild tigers by 2022. WWF is playing a pivotal role in realizing this ambitious goal, which will ensure the king of the jungle will once again thrive across its range in 13 countries to benefit other wildlife and wild spaces, secure freshwater sources and a future for people too</p>
+            </div>
+        </div>
+        <div class="card">
+            <!-- Image -->
+            <img src="images/gallery-7.jpg" alt="Card Image">
+    
+            <!-- Text Content -->
+            <div class="card-content">
+                <h3>SAVING A PLANET OF LIFE</h3>
+                <p>We protect wildlife for many reasons. It is a source of inspiration. It nurtures a sense of wonder. It is integral to the balance of nature. In our work, WWF focuses on saving populations of the most ecologically, economically and culturally important species in the wild. Ultimately, by protecting species, we save this beautiful, vulnerable and utterly irreplaceable planet we call home.</p>
+            </div>
+        </div>
+          <div class="card">
+            <!-- Image -->
+            <img src="images/gallery-6.jpg" alt="Card Image">
+    
+            <!-- Text Content -->
+            <div class="card-content">
+                <h3>TIGER CONSERVATION</h3>
+                <p>Roaring back from the brink of extinction, tigers are captivating symbols of strength and resilience. With only around 3,900 tigers remaining in the wild, WWF is committed to protecting these magnificent big cats and their habitats. Our efforts span across multiple tiger range countries, employing innovative conservation strategies to counter poaching, habitat loss, and human-wildlife conflict. Join us in the fight to ensure a future where these iconic predators roam freely in thriving ecosystems.</p>
+            </div>
+        </div>
+    
 
     </section>
 

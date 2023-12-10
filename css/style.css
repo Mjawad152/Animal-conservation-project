@@ -276,7 +276,7 @@ section{
 
 .about .content p{
   font-size: 1.7rem;
-  color: #444;
+  color: var(--black);
   padding: 1rem 0;
   line-height: 2;
 }
@@ -304,7 +304,7 @@ section{
 .about .content .icons-container .icons h3{
   padding-top: 1rem;
   font-size: 1.5rem;
-  color: #444;
+  color: var(--black);
   font-weight: normal;
 }
 
@@ -612,7 +612,7 @@ section{
 
 /* media queries */
 
-@media(max-width: 991px){
+@media(max-width: 1024px){
   html{
     font-size: 55%;
   }
@@ -624,7 +624,7 @@ section{
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
   #menu-btn{
     display: inline-block;
@@ -663,7 +663,7 @@ section{
 
 }
 
-@media (max-width: 450px){
+@media (max-width: 600px){
   html{
     font-size: 50%;
   }
@@ -673,6 +673,7 @@ section{
   }
 
 }
+
 .text-overlay {
   position: absolute;
   top: 80%;
@@ -683,4 +684,62 @@ section{
   background-color: white;
  font-size: medium;
 }
+/* Basic styling for the card */
+.card {
+  width: calc(33.33% - 40px); /* 33.33% width for each card with some margin */
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+
+.card .card-content {
+  padding: 15px;
+}
+
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  margin: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 40px);
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 100%; 
+  }
+}
+
+
+
+
+
+.dark-mode {
+  --main: red;
+  --bg: black;
+  --black: white;
+  --white: black;
+  --box-shadow: 0 .5rem 1rem rgba(254, 253, 253, 0.1);
+  background-color: #000;
+  color: white;
+ 
+}
+
 

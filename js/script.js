@@ -35,3 +35,28 @@ var swiper = new Swiper(".gallery-slider", {
         },
     }
 })
+
+
+
+// darkmode.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const darkModeStyles = document.getElementById('dark-mode-styles');
+
+    darkModeToggle.addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+        
+        if (darkModeStyles.hasAttribute('disabled')) {
+            darkModeStyles.removeAttribute('disabled');
+        } else {
+            darkModeStyles.setAttribute('disabled', 'true');
+        }
+    });
+});
+
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
